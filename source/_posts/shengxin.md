@@ -40,6 +40,6 @@ tags:
 ## 【联系我们】
 QQ: 781998178
 
-[常见问题?](https://shengxin.github.io/shengxinhelp.html)
+[常见问题?](https://xiaomiyang.github.io/shengxinhelp.html)
 
-[版权声明](https://shengxin.github.io/SXStatement.txt)
+[版权声明](https://xiaomiyang.github.io/SXStatement.txt)
