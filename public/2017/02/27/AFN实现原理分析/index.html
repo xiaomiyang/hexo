@@ -1,0 +1,571 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>AFN实现原理分析(2.x版本) | SukeYang的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="SukeYang">
+    
+
+    
+    <meta name="description" content="使用AFHTTPSessionManager进行网络请求,类继承于AFURLSessionManager
+
+12345678AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];[manager GET:URL parameters:nil progress:nil success:^(NSURLSessionDataTas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AFN实现原理分析(2.x版本)">
+<meta property="og:url" content="https://sukeyang.github.io/2017/02/27/AFN实现原理分析/index.html">
+<meta property="og:site_name" content="SukeYang的博客">
+<meta property="og:description" content="使用AFHTTPSessionManager进行网络请求,类继承于AFURLSessionManager
+
+12345678AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];[manager GET:URL parameters:nil progress:nil success:^(NSURLSessionDataTas">
+<meta property="og:updated_time" content="2017-02-27T06:00:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AFN实现原理分析(2.x版本)">
+<meta name="twitter:description" content="使用AFHTTPSessionManager进行网络请求,类继承于AFURLSessionManager
+
+12345678AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];[manager GET:URL parameters:nil progress:nil success:^(NSURLSessionDataTas">
+
+    
+    <link rel="alternative" href="/atom.xml" title="SukeYang的博客" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="SukeYang的博客" title="SukeYang的博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="SukeYang的博客">SukeYang的博客</a></h1>
+				<h2 class="blog-motto">记录下自己学习的点滴</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+    					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+    					<label>Search</label>
+   						<input type="text" id="search" class="st-default-search-input" maxlength="20" placeholder="Search" />
+   				 		</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/02/27/AFN实现原理分析/" title="AFN实现原理分析(2.x版本)" itemprop="url">AFN实现原理分析(2.x版本)</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="SukeYang" target="_blank" itemprop="author">SukeYang</a>
+		
+  <p class="article-time">
+    <time datetime="2017-02-27T03:49:29.000Z" itemprop="datePublished"> 发表于 2017-02-27</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			
+		
+		</div>
+		
+		<ol>
+<li>使用AFHTTPSessionManager进行网络请求,类继承于AFURLSessionManager</li>
+</ol>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];</div><div class="line">[manager GET:URL parameters:<span class="literal">nil</span> progress:<span class="literal">nil</span> success:^(<span class="built_in">NSURLSessionDataTask</span> *_Nonnulltask, <span class="keyword">id</span> _NullableresponseObject) &#123;</div><div class="line">  <span class="built_in">dispatch_async</span>(dispatch_get_main_queue(), ^&#123;</div><div class="line">  <span class="comment">//将子线程从网络拉取的数据用于主线程刷新视图</span></div><div class="line">    &#125;);</div><div class="line">  &#125;failure:^(<span class="built_in">NSURLSessionDataTask</span>*_Nullabletask,<span class="built_in">NSError</span>*_Nonnullerror) &#123;</div><div class="line"></div><div class="line">&#125;];</div></pre></td></tr></table></figure>
+<p>通过查看manager方法代码可以看到其实现最终是调用了父类AFURLSessionManager的initWithSessionConfiguration：方法，</p>
+<p>设置了默认的json解析方式;</p>
+<p>最大的并发操作数为1是让所有请求的发起和等待网络响应均在同一条线程中执行，而不用为每一个请求都新建一条线程，这样节约了很多资源;</p>
+<p>默认安全策略是AFSSLPinningModeNone,</p>
+<p>该方法代码片段如下</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">self</span>.sessionConfiguration = configuration;</div><div class="line"><span class="keyword">self</span>.operationQueue = [[<span class="built_in">NSOperationQueue</span> alloc] init];</div><div class="line"><span class="keyword">self</span>.operationQueue.maxConcurrentOperationCount = <span class="number">1</span>;</div><div class="line"><span class="keyword">self</span>.session = [<span class="built_in">NSURLSession</span> sessionWithConfiguration:<span class="keyword">self</span>.sessionConfiguration delegate:<span class="keyword">self</span> delegateQueue:<span class="keyword">self</span>.operationQueue];</div><div class="line"><span class="keyword">self</span>.responseSerializer = [AFJSONResponseSerializer serializer];</div></pre></td></tr></table></figure>
+<p>在响应到达后会执行AFURLSessionManager的NSURLSessionDataDelegate协议的方法，[AFURLSessioinManager URLSession:dataTask:didReceiveData:]用于查找对应的响应代理，并将后续的数据处理如数据拼接转交给该代理。该方法的实现代码如下：</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">AFURLSessionManagerTaskDelegate</span> *delegate = [<span class="keyword">self </span>delegateForTask:dataTask]<span class="comment">;</span></div><div class="line">[delegate URLSession:session dataTask:dataTask didReceiveData:<span class="meta">data</span>]<span class="comment">;</span></div><div class="line"></div><div class="line"><span class="symbol">if</span> (<span class="keyword">self.dataTaskDidReceiveData) </span>&#123;</div><div class="line">    <span class="keyword">self.dataTaskDidReceiveData(session, </span>dataTask, <span class="meta">data</span>)<span class="comment">;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>在数据比较大时，改方法可能会多次执行。</p>
+<p>当数据传输完成后会调用[AFURLSessioinManager URLSession:task:didCompleteWithError],该方法用于让对应的代理执行NSURLSessionTaskDelegate协议中的方法，并将该代理对象从字典中移除，源代码如下：</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">AFURLSessionManagerTaskDelegate *delegate = [self delegateForTask:<span class="keyword">task</span>];</div><div class="line"></div><div class="line">// delegate may be nil <span class="keyword">when</span> completing a <span class="keyword">task</span> <span class="keyword">in</span> the background</div><div class="line"><span class="keyword">if</span> (delegate) &#123;</div><div class="line">    [delegate URLSession:session <span class="keyword">task</span>:<span class="keyword">task</span> didCompleteWithError:error];</div><div class="line"></div><div class="line">    [self removeDelegateForTask:<span class="keyword">task</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">if</span> (self.taskDidComplete) &#123;</div><div class="line">    self.taskDidComplete(session, <span class="keyword">task</span>, error);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>随后代理执行URLSession:task:didCompleteWithError:，该方法把数据放到另一个由静态方法生成的url_session_manager_processing_queue操作队列中做数据解析，如json解析，并将解析后的数据回传到主线程或者你自己生成的操作队列里，通过通知中心将请求完成的消息传递到主线程去（后面会写一篇文章介绍通知中心的实现原理,并写一个类似的通知中心）。<br>该方法源码片段如下：</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">dispatch_async(url_session_manager_processing_queue(), </span>^&#123;</div><div class="line">            NSError *serializationError = nil<span class="comment">;</span></div><div class="line">            responseObject = [manager.responseSerializer responseObjectForResponse:task.response data:[NSData dataWithData:self.mutableData] error:&amp;serializationError]<span class="comment">;</span></div><div class="line"></div><div class="line">            <span class="keyword">dispatch_group_async(manager.completionGroup </span>?: url_session_manager_completion_group(), manager.completionQueue ?: <span class="keyword">dispatch_get_main_queue(), </span>^&#123;</div><div class="line">                if (self.completionHandler) &#123;</div><div class="line">                    self.completionHandler(task.response, responseObject, serializationError)<span class="comment">;</span></div><div class="line">                &#125;</div><div class="line"></div><div class="line">            <span class="keyword">dispatch_async(dispatch_get_main_queue(), </span>^&#123;</div><div class="line">                [[NSNotificationCenter defaultCenter] postNotificationName:AFNetworkingTaskDidCompleteNotification object:task userInfo:userInfo]<span class="comment">;</span></div><div class="line">                &#125;)<span class="comment">;</span></div><div class="line">            &#125;)<span class="comment">;</span></div><div class="line">        &#125;)<span class="comment">;</span></div></pre></td></tr></table></figure>
+<p>通知的作用是decrementActivityCount;</p>
+<p>[self.refreshControl endRefreshing];等</p>
+  
+
+		  	<div width="100%" align="center" align="center">
+	<a href="http://www.dashangcloud.com/sh/878fe4" title="云打赏">
+		<button style="width:110px; height:44px; border:#FFFFFF 1px solid; background:#EA6F5A; color:#FFFFFF;font-size: 16px;border-radius: 6px">打赏作者</button>
+	</a>
+</div>
+
+
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/原理/">原理</a>
+</div>
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="https://sukeyang.github.io/2017/02/27/AFN实现原理分析/" data-title="AFN实现原理分析(2.x版本) | SukeYang的博客" data-tsina="1720383823" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2017/02/28/Masonry解析/" title="Masonry解析">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Masonry解析</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2017/02/27/YTK实现原理分析/"  title="YTK实现原理分析">
+ <strong>下一篇：</strong><br/> 
+ <span>YTK实现原理分析
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2017/02/27/AFN实现原理分析/" data-title="AFN实现原理分析(2.x版本)" data-url="https://sukeyang.github.io/2017/02/27/AFN实现原理分析/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="sukeyang" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/BFE/" title="BFE">BFE<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/ios/" title="ios">ios<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/ios-技巧-tools-js-原理-选一个/" title="ios,技巧,tools,js,原理&lt;!--选一个--&gt;">ios,技巧,tools,js,原理&lt;!--选一个--&gt;<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/iphone/" title="iphone">iphone<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/js/" title="js">js<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/tools/" title="tools">tools<sup>7</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/原理/" title="原理">原理<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/技巧/" title="技巧">技巧<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/tools/" title="tools">tools<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/效率/" title="效率">效率<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" title="新概念英语">新概念英语</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1720383823&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m SukeYang in Beijing. <br/>
+			This is my blog,try to do better.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1720383823" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/sukeyang" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright" style="margin-top: 10px;">
+	Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017
+	
+	<a href="/about" target="_blank" title="SukeYang">SukeYang</a>
+	
+
+	</p>
+		<script type="text/javascript">
+  		(function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  		(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  		e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  		})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  		_st('install','Zo1mzEpQeR6Xjr3hz4jd','2.0.0');
+		</script>
+		
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"oxgen"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261207742'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261207742%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

@@ -1,0 +1,629 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>js基本用法(一) | SukeYang的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="SukeYang">
+    
+
+    
+    <meta name="description" content="基本用法1.不用new的话,this会变成全局变量
+function Hero(name) { this.name = name ;};
+var h1 = Hero(&amp;quot;ceshi&amp;quot;);
+2.大小写严格3.Infinity 超出处理范围的数值 1e309,4.NaN依旧是number,typeof NaN可以查看,特殊数字5.数字字符串做运算,会当成数字类型使用,转换失败就是Na">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js基本用法(一)">
+<meta property="og:url" content="https://sukeyang.github.io/2017/02/10/xuejs1/index.html">
+<meta property="og:site_name" content="SukeYang的博客">
+<meta property="og:description" content="基本用法1.不用new的话,this会变成全局变量
+function Hero(name) { this.name = name ;};
+var h1 = Hero(&amp;quot;ceshi&amp;quot;);
+2.大小写严格3.Infinity 超出处理范围的数值 1e309,4.NaN依旧是number,typeof NaN可以查看,特殊数字5.数字字符串做运算,会当成数字类型使用,转换失败就是Na">
+<meta property="og:updated_time" content="2017-02-13T01:02:43.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="js基本用法(一)">
+<meta name="twitter:description" content="基本用法1.不用new的话,this会变成全局变量
+function Hero(name) { this.name = name ;};
+var h1 = Hero(&amp;quot;ceshi&amp;quot;);
+2.大小写严格3.Infinity 超出处理范围的数值 1e309,4.NaN依旧是number,typeof NaN可以查看,特殊数字5.数字字符串做运算,会当成数字类型使用,转换失败就是Na">
+
+    
+    <link rel="alternative" href="/atom.xml" title="SukeYang的博客" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="SukeYang的博客" title="SukeYang的博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="SukeYang的博客">SukeYang的博客</a></h1>
+				<h2 class="blog-motto">记录下自己学习的点滴</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+    					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+    					<label>Search</label>
+   						<input type="text" id="search" class="st-default-search-input" maxlength="20" placeholder="Search" />
+   				 		</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/02/10/xuejs1/" title="js基本用法(一)" itemprop="url">js基本用法(一)</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="SukeYang" target="_blank" itemprop="author">SukeYang</a>
+		
+  <p class="article-time">
+    <time datetime="2017-02-10T10:12:00.000Z" itemprop="datePublished"> 发表于 2017-02-10</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本用法"><span class="toc-number">1.</span> <span class="toc-text">基本用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据操作"><span class="toc-number">2.</span> <span class="toc-text">数据操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象操作"><span class="toc-number">3.</span> <span class="toc-text">对象操作</span></a></li></ol>
+		
+		</div>
+		
+		<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>1.不用new的话,this会变成全局变量</p>
+<pre><code>function Hero(name) { this.name = name ;};
+var h1 = Hero(&quot;ceshi&quot;);
+</code></pre><p>2.大小写严格<br>3.Infinity 超出处理范围的数值 1e309,<br>4.NaN依旧是number,typeof NaN可以查看,特殊数字<br>5.数字字符串做运算,会当成数字类型使用,转换失败就是NaN,偷懒做法是1*s转换成数字,</p>
+<pre><code>var s = &quot;1&quot;;s = 3*s
+var s = &quot;100&quot;;s = 1*s
+var s = &quot;1avbc&quot;;s = 3*s
+</code></pre><p>加法不适用</p>
+<pre><code>var s = &quot;1&quot;;s += 3    
+</code></pre><p>6.加法是用来把数字转成字符串,取巧的方式</p>
+<pre><code>var s = &quot;1&quot;;s += 3    
+</code></pre><p>7.空字符串””,null,undefined,0,NaN,false都是false<br>8.===等价运算</p>
+<pre><code>1 === &apos;1&apos;    false
+</code></pre><p>!== 不能价运算     </p>
+<pre><code>NaN == NaN  false
+</code></pre><p>9.undefined为不存在或者未经过赋值的变量,和nul在转换基本类型时有区别</p>
+<pre><code>&quot;&quot; + null        &quot;null&quot;
+&quot;&quot; + undefined   undefined
+</code></pre><h3 id="数据操作"><a href="#数据操作" class="headerlink" title="数据操作"></a>数据操作</h3><p>1.数组操作</p>
+<pre><code>delete a[1]    
+length属性为太长自动填充    undefined
+a.push(&quot;last&quot;)     //添加到最后
+  a.pop()   //删掉最后
+  a.sort()  //排序
+  a.join(&quot;is &quot;)  //连接&quot;1is is is &quot;
+  a.slice(1,2)  //查看
+  a.splice(1,2,100,200,300) //删掉并添加新的[1, 100, 200, 300, undefined × 1]
+</code></pre><p>2.判断数组存在</p>
+<pre><code>if(typeof somevar == &quot;undefined&quot;) {result = &quot;yes&quot;};
+&quot;yes&quot;    
+</code></pre><p>3.常用函数parseInt() 默认十进制,看后面参数的开头”0x”,”0337”应该避免为8进制<!--并未在google浏览器下出现错误--></p>
+<pre><code>parseInt(&quot;123abc&quot;) 123
+parseInt(&quot;FF&quot;,16)  255
+parseInt(&quot;0x34&quot;)
+</code></pre><p>4.isNaN函数其实等同于回答了这样一个问题：这个值被强制转换成数值时会不会返回IEEE-754​中所谓的”不是数值“（not a number）。</p>
+<pre><code>isNaN({}); // true    
+isNaN(&quot;37&quot;);      // false: 可以被转换成数值37
+</code></pre><p>5.你可以用这个方法来判定一个数字是否是有限数字。isFinite 方法检测它参数的数值。如果参数是 NaN，正无穷大或者负无穷大，会返回false，其他返回 true。</p>
+<pre><code>isFinite(2e64);      // true
+isFinite(Infinity);  // false
+</code></pre><p>6.encodeURI() 是对统一资源标识符（URI）进行编码的方法。它使用1到4个转义序列来表示每个字符的UTF-8编码<br>encodeURIComponent()是对统一资源标识符（URI）的组成部分进行编码的方法。它使用一到四个转义序列来表示字符串中的每个字符的UTF-8编码（只有由两个Unicode代理区字符组成的字符才用四个转义字符编码）。</p>
+<pre><code>encodeURI()
+encodeURIComponent()
+</code></pre><p>7.eval(string) 一个字符串表示了一个JavaScript表达式，声明， 或声明的序列。表达式可以包括变量和已存在对象的属性。</p>
+<pre><code>eval(string)
+</code></pre><p>8.总是使用var 来声明全局变量<br>9.f()执行之后,n()为全局变量,或者返回给全局空间声明,保留了作用域内参数b的值,记录自身在的环境和相关的参数.</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">	<span class="keyword">var</span> n;</div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">f</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="keyword">var</span>  b  = <span class="string">"b"</span>;</div><div class="line">	n = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="keyword">return</span> b;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>留住的是指针,用get,set函数闭包建立私有变量,迭代器.</p>
+<h3 id="对象操作"><a href="#对象操作" class="headerlink" title="对象操作"></a>对象操作</h3><p>1.属性名字一般不加引号,除非:为js保留字,含有特殊字符,用数字开头的属性<br>2.属性可以是函数,函数是一种数据类型.<br>3.属性不能用.进行调用和(1)条件一致<br>4.this标识当前对象.<br>5.不用new 生成对象 this引用的是window全局对象.<br>6.对象有一个constructor 构造器属性<br>7.h12 instanceof Hero 是否有某一个对象初始化来的<br>8.控制输出数据的内容,函数也是对象也是一种数据类型</p>
+<pre><code>console.info(h12)
+console.log() 
+console.error()
+</code></pre><p>9.一些方法,o会自动调用toString</p>
+<pre><code>toString
+&quot;an object&quot; + o    
+</code></pre><p>10.valueOf()返回对象本身.</p>
+<pre><code>o.valueOf() === o    
+</code></pre><p>11.尽量避免使用Function 构造器函数,权限太大</p>
+<pre><code>var sum = new Function(&quot;a,b&quot;,&quot;return a + b&quot;)     sum.length //参数个数 2
+</code></pre><p>12.caller返回调用函数</p>
+<pre><code>function A(){return A.caller;}
+function B(){return A();}
+</code></pre><p>13.prototype为构造函数的内容,该属性为一个对象</p>
+<pre><code>prototype        
+</code></pre><p>14.some_obj.say.call(my_obj,’myobje’)为让my_obj 执行say 函数,并且传入参数.本质是修改了this的值,<br>some_obj.say.apply(my_obj,[‘ceshi’])为apply 参数为一个数组形式的<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> some_obj = &#123;</div><div class="line">	name:<span class="string">'nanne'</span>,</div><div class="line">	say:<span class="function"><span class="keyword">function</span><span class="params">(who)</span></span>&#123;</div><div class="line">	<span class="keyword">return</span> <span class="string">'haya '</span> + who + <span class="string">', i am a '</span> +<span class="keyword">this</span>.name;	</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">some_obj.say.apply(my_obj,[<span class="string">'ceshi'</span>])</div></pre></td></tr></table></figure></p>
+<p>15.arguments.callee属性为当前的函数对象,arguments数组,没有sort和slice方法</p>
+<pre><code>    (
+function (count) {
+    if(count &lt; 5){
+    alert(count);
+    arguments.callee(++count);    
+}
+}
+)(1)
+</code></pre>  
+
+		  	<div width="100%" align="center" align="center">
+	<a href="http://www.dashangcloud.com/sh/878fe4" title="云打赏">
+		<button style="width:110px; height:44px; border:#FFFFFF 1px solid; background:#EA6F5A; color:#FFFFFF;font-size: 16px;border-radius: 6px">打赏作者</button>
+	</a>
+</div>
+
+
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/js/">js</a>
+</div>
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="https://sukeyang.github.io/2017/02/10/xuejs1/" data-title="js基本用法(一) | SukeYang的博客" data-tsina="1720383823" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2017/02/10/xuejs2/" title="js基本用法(二)">
+  <strong>上一篇：</strong><br/>
+  <span>
+  js基本用法(二)</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2017/02/06/2016总结/"  title="2016总结">
+ <strong>下一篇：</strong><br/> 
+ <span>2016总结
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2017/02/10/xuejs1/" data-title="js基本用法(一)" data-url="https://sukeyang.github.io/2017/02/10/xuejs1/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本用法"><span class="toc-number">1.</span> <span class="toc-text">基本用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据操作"><span class="toc-number">2.</span> <span class="toc-text">数据操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象操作"><span class="toc-number">3.</span> <span class="toc-text">对象操作</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="sukeyang" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/BFE/" title="BFE">BFE<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/ios/" title="ios">ios<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/ios-技巧-tools-js-原理-选一个/" title="ios,技巧,tools,js,原理&lt;!--选一个--&gt;">ios,技巧,tools,js,原理&lt;!--选一个--&gt;<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/iphone/" title="iphone">iphone<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/js/" title="js">js<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/tools/" title="tools">tools<sup>7</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/原理/" title="原理">原理<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/技巧/" title="技巧">技巧<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/tools/" title="tools">tools<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/效率/" title="效率">效率<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" title="新概念英语">新概念英语</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1720383823&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m SukeYang in Beijing. <br/>
+			This is my blog,try to do better.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1720383823" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/sukeyang" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright" style="margin-top: 10px;">
+	Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017
+	
+	<a href="/about" target="_blank" title="SukeYang">SukeYang</a>
+	
+
+	</p>
+		<script type="text/javascript">
+  		(function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  		(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  		e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  		})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  		_st('install','Zo1mzEpQeR6Xjr3hz4jd','2.0.0');
+		</script>
+		
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"oxgen"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261207742'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261207742%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
