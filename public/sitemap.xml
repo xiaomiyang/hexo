@@ -2,196 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sukeyang.github.io/2016/06/08/shengxin/</loc>
+    <loc>https://shengxin.github.io/about/index.html</loc>
+    
+    <lastmod>2017-03-06T12:10:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shengxin.github.io/2016/06/08/shengxin/</loc>
     
     <lastmod>2017-03-06T11:34:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sukeyang.github.io/2016/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    
-    <lastmod>2017-03-03T02:03:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/06/07/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/</loc>
-    
-    <lastmod>2017-03-03T01:23:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/07/03/%E9%83%A8%E5%88%86App%E6%9B%B4%E6%96%B0%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91/</loc>
-    
-    <lastmod>2017-03-03T01:05:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/17/weex%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2017-03-01T09:23:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/28/Masonry%E8%A7%A3%E6%9E%90/</loc>
-    
-    <lastmod>2017-02-28T02:35:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/06/2016%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2017-02-28T01:38:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/12/01/Carthage%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2017-02-27T09:43:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/12/01/%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1Carthage%E6%94%AF%E6%8C%81%E7%9A%84%E5%BA%93/</loc>
-    
-    <lastmod>2017-02-27T09:41:58.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/08/27/cocopod%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/</loc>
-    
-    <lastmod>2017-02-27T06:39:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/08/02/CocoaPods%E5%AE%89%E8%A3%85/</loc>
-    
-    <lastmod>2017-02-27T06:31:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/27/AFN%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/</loc>
-    
-    <lastmod>2017-02-27T06:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/27/YTK%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/</loc>
-    
-    <lastmod>2017-02-27T05:59:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/11/24/tableviewcell%E5%B7%A6%E5%AF%B9%E9%BD%90/</loc>
-    
-    <lastmod>2017-02-24T03:03:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/13/xuejs3/</loc>
-    
-    <lastmod>2017-02-23T03:56:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/07/20/git%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2017-02-21T02:17:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/12/18/%E4%BD%BF%E7%94%A8SublimeText%E8%BF%9B%E8%A1%8CMarkdown%E7%BC%96%E8%BE%91/</loc>
-    
-    <lastmod>2017-02-21T01:50:14.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/10/01/UIAlertView%E4%B8%8D%E6%B6%88%E5%A4%B1/</loc>
-    
-    <lastmod>2017-02-20T01:39:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/baidu_verify_U46qrtfJuH.html</loc>
-    
-    <lastmod>2017-02-20T01:39:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/12/15/ReactNative%E9%94%99%E8%AF%AF%E6%94%B6%E9%9B%86%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2017-02-17T03:58:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2016/09/06/Link%20Binary%20With/</loc>
-    
-    <lastmod>2017-02-17T03:58:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/10/xuejs2/</loc>
-    
-    <lastmod>2017-02-13T10:04:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/2017/02/10/xuejs1/</loc>
-    
-    <lastmod>2017-02-13T01:02:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/googlee7b1aeaf649970a2.html</loc>
-    
-    <lastmod>2017-02-09T02:02:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/categories/index.html</loc>
+    <loc>https://shengxin.github.io/categories/index.html</loc>
     
     <lastmod>2017-02-08T01:46:29.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sukeyang.github.io/tags/index.html</loc>
+    <loc>https://shengxin.github.io/tags/index.html</loc>
     
     <lastmod>2017-02-08T01:45:58.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sukeyang.github.io/about/index.html</loc>
-    
-    <lastmod>2017-02-06T09:57:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sukeyang.github.io/shengxinhelp.html</loc>
+    <loc>https://shengxin.github.io/shengxinhelp.html</loc>
     
     <lastmod>2016-10-08T01:19:04.000Z</lastmod>
     
