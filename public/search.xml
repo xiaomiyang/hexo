@@ -217,6 +217,12 @@ function changeColor(color){
     </entry>
     
     <entry>
+      <title><![CDATA[categories]]></title>
+      <url>https://xiaomiyang.github.io/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[about]]></title>
       <url>https://xiaomiyang.github.io/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="info"><a href="#info" class="headerlink" title="info"></a>info</h2><p>xiaomiyang iOS developer</p>
@@ -227,12 +233,6 @@ function changeColor(color){
     <entry>
       <title></title>
       <url>https://xiaomiyang.github.io/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[categories]]></title>
-      <url>https://xiaomiyang.github.io/categories/index.html</url>
       <content type="html"></content>
     </entry>
     
