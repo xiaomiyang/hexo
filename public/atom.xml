@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaomiyang.github.io/"/>
-  <updated>2017-03-06T13:09:02.000Z</updated>
+  <updated>2017-03-07T09:37:37.000Z</updated>
   <id>https://xiaomiyang.github.io/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;省心英语&gt;苹果版本使用常见问题!</title>
+    <link href="https://xiaomiyang.github.io/2017/03/07/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <id>https://xiaomiyang.github.io/2017/03/07/常见问题/</id>
+    <published>2017-03-07T09:13:16.000Z</published>
+    <updated>2017-03-07T09:37:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-6-2为最新版本。"><a href="#1-6-2为最新版本。" class="headerlink" title="1.6.2为最新版本。"></a>1.6.2为最新版本。</h1><p>更新内容:</p>
+<p>增加离线发音安装包;</p>
+<p>跟读的语音，上传到云端;</p>
+<p>增加单词发音的次数;</p>
+<p>修改歌词文件加载失败！</p>
+<h2 id="1-下载完app连接不上网络"><a href="#1-下载完app连接不上网络" class="headerlink" title="1.下载完app连接不上网络"></a>1.下载完app连接不上网络</h2><p><strong>苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网</strong></p>
+<h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1:"></a>方法1:</h3><p>进入“设置-&gt;蜂窝移动网络-&gt;使用无线局域网与蜂窝移动的应用”（或者“设置-&gt;无线局域网-&gt;使用无线局域网与蜂窝移动的应用”），找到无法联网的App，允许其“使用数据”即可。</p>
+<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2:"></a>方法2:</h3><p>另外还有一种Bug情况：在该列表中找不到这款无法联网的App。</p>
+<ul>
+<li><p>此时，在列表中任意选择一个App，先关闭“无线局域网与蜂窝移动数据“，即不允许其使用数据。然后再重新打开允许使用“无线局域网与蜂窝移动数据”。</p>
+</li>
+<li><p>返回桌面，再次打开刚才无法联网的App，这时候系统会提示“是否允许App使用数据网络”，点击“允许”，App即可顺利联网使用。</p>
+</li>
+</ul>
+<h3 id="方法3"><a href="#方法3" class="headerlink" title="方法3:"></a>方法3:</h3><p>重启手机,进入app,会进行提示!</p>
+<h2 id="2-不能够点击取词"><a href="#2-不能够点击取词" class="headerlink" title="2.不能够点击取词"></a>2.不能够点击取词</h2><p>已经修改为双击取词,长按出现复制,也可以在我的-&gt;学习设置里面进行设置-&gt;长按取词</p>
+<h2 id="3-手机号码黑名单问题"><a href="#3-手机号码黑名单问题" class="headerlink" title="3.手机号码黑名单问题"></a>3.手机号码黑名单问题</h2><p>由于短信公司出现问题,导致黑名单出现,下版本会修复这个问题!</p>
+<hr>
+<ul>
+<li><p>有建议或者问题请反馈给我们,多谢大家,我们会不断改进app,有用的话可以推荐给需要的同学!</p>
+</li>
+<li><p>安卓和ios统一下载地址:<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">省心英语-最好用的学英语软件!</a></p>
+</li>
+</ul>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;1-6-2为最新版本。&quot;&gt;&lt;a href=&quot;#1-6-2为最新版本。&quot; class=&quot;headerlink&quot; title=&quot;1.6.2为最新版本。&quot;&gt;&lt;/a&gt;1.6.2为最新版本。&lt;/h1&gt;&lt;p&gt;更新内容:&lt;/p&gt;
+&lt;p&gt;增加离线发音安装包;&lt;/p&gt;
+&lt;p&gt;跟读的
+    
+    </summary>
+    
+      <category term="iphone" scheme="https://xiaomiyang.github.io/categories/iphone/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>省心英语简介</title>
