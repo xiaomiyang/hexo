@@ -60,9 +60,9 @@ creative_commons: none
 author:
   intro_line1:  "Hello ,I'm xiaomiyang in Beijing."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog,try to do better."  ## the 2nd line
-  weibo: 1720383823     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  weibo_verifier: b3593ceb    ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
-  tsina: 1720383823     ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo_verifier:     ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email:      ## e.g. imjark@gmail.com
@@ -109,9 +109,10 @@ google_analytics:
 baidu_tongji:
   enable: true
   sitecode: e6d1f421bbc9962127a50488f9ed37d1 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  
 cnzz_tongji:
   enable: true
-  siteid: 1261207742   ## e.g. 1253575964 your cnzz tongji site id
+  siteid: 1261438906   ## e.g. 1253575964 your cnzz tongji site id
 
 #### Miscellaneous
 ShowCustomFont: true  ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
