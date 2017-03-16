@@ -62,6 +62,27 @@
 ]]></content>
     </entry>
     
+    <entry>
+      <title><![CDATA[APP技术支持]]></title>
+      <url>https://xiaomiyang.github.io/2016/06/08/shengxinOnly/</url>
+      <content type="html"><![CDATA[<h2 id="【联系支持】"><a href="#【联系支持】" class="headerlink" title="【联系支持】"></a>【联系支持】</h2><p>反馈问题交流群: 389764374</p>
+<p>技术QQ: 781998178</p>
+<p>邮箱: shengxinsoft@163.com</p>
+<h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><ul>
+<li><p>作为英语学习敲门砖的第一册，到体味英语精髓的第四册，轻轻松松从英语零基础直达大学六级水平！<br>如果你什么都不会，你可从 第一册 学起。</p>
+</li>
+<li><p>如果你有初高中水平，那第二册是一个开始学习是个不错的选择。<br>第二册学完后，你就可以进行简单的英语交流了，相当于一个大学一年级的水平。 </p>
+</li>
+<li><p>第三册就是考四级的内容了，三册完成学习后，考英语4级就没问题了。<br>如果你还想继续更精通英语的话，那你可以选择第四册了。 </p>
+</li>
+<li><p>第四册会让你开阔你的视野，用英语从人文，地理，历史，哲学等方面<br>讲解西方文化，熟悉英语的根源，第四册不止是学习英语，更多是运用和精通英语。同时练就你流利的英语口语，和你的阅读能力。 如果你认真学习完四册。 你将达到一个英语六级以上的水平， 理论上，交流和阅读。</p>
+</li>
+</ul>
+<h2 id="最新app下载地址"><a href="#最新app下载地址" class="headerlink" title="最新app下载地址"></a><a href="http://itunes.apple.com/cn/app/id1107498029?mt=8" target="_blank" rel="external">最新app下载地址</a></h2><p><a href="https://xiaomiyang.github.io/shengxinhelp.html">常见问题列表?</a></p>
+<p><a href="https://xiaomiyang.github.io/SXStatement.txt">版权声明</a></p>
+]]></content>
+    </entry>
+    
   
   
     
@@ -250,14 +271,6 @@ function changeColor(color){
     </entry>
     
     <entry>
-      <title><![CDATA[about]]></title>
-      <url>https://xiaomiyang.github.io/about/index.html</url>
-      <content type="html"><![CDATA[<h2 id="info"><a href="#info" class="headerlink" title="info"></a>info</h2><p>xiaomiyang iOS developer</p>
-<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>GitHub：<a href="https://github.com/xiaomiyang" target="_blank" rel="external">shengxinapp</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[categories]]></title>
       <url>https://xiaomiyang.github.io/categories/index.html</url>
       <content type="html"></content>
@@ -267,6 +280,14 @@ function changeColor(color){
       <title></title>
       <url>https://xiaomiyang.github.io/tags/index.html</url>
       <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[about]]></title>
+      <url>https://xiaomiyang.github.io/about/index.html</url>
+      <content type="html"><![CDATA[<h2 id="info"><a href="#info" class="headerlink" title="info"></a>info</h2><p>xiaomiyang iOS developer</p>
+<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>GitHub：<a href="https://github.com/xiaomiyang" target="_blank" rel="external">shengxinapp</a></p>
+]]></content>
     </entry>
     
   
