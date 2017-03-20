@@ -277,17 +277,17 @@ function changeColor(color){
     </entry>
     
     <entry>
-      <title></title>
-      <url>https://xiaomiyang.github.io/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[about]]></title>
       <url>https://xiaomiyang.github.io/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="info"><a href="#info" class="headerlink" title="info"></a>info</h2><p>xiaomiyang iOS developer</p>
 <h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>GitHub：<a href="https://github.com/xiaomiyang" target="_blank" rel="external">shengxinapp</a></p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>https://xiaomiyang.github.io/tags/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
