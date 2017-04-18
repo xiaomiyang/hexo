@@ -27,9 +27,11 @@ tags:
 * 第四册会让你开阔你的视野，用英语从人文，地理，历史，哲学等方面 
 讲解西方文化，熟悉英语的根源，第四册不止是学习英语，更多是运用和精通英语。同时练就你流利的英语口语，和你的阅读能力。 如果你认真学习完四册。 你将达到一个英语六级以上的水平， 理论上，交流和阅读。
 
+<!-- more -->
+
 ## [最新app下载地址](http://itunes.apple.com/cn/app/id1107498029?mt=8)
 
 
-[常见问题列表?](https://xiaomiyang.github.io/shengxinhelp.html)
+## [常见问题列表?](https://xiaomiyang.github.io/shengxinhelp.html)
 
-[版权声明](https://xiaomiyang.github.io/SXStatement.txt)
+## [版权声明](https://xiaomiyang.github.io/SXStatement.txt)
