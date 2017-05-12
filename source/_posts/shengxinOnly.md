@@ -1,18 +1,11 @@
 ---
-title: APP技术支持
+title: 新概念英语-全四册课文音频单词大全简介
 categories: 'iphone'
 date: 2016-06-08 19:21:41
 tags:
 ---
 
-
-## 【联系支持】
-
-反馈问题交流群: 389764374
-
-技术QQ: 781998178
-
-邮箱: shengxinsoft@163.com
+## [最新app下载地址](http://itunes.apple.com/cn/app/id1107498029?mt=8)
 
 ## 【产品简介】
 * 作为英语学习敲门砖的第一册，到体味英语精髓的第四册，轻轻松松从英语零基础直达大学六级水平！
@@ -29,7 +22,14 @@ tags:
 
 <!-- more -->
 
-## [最新app下载地址](http://itunes.apple.com/cn/app/id1107498029?mt=8)
+## 【联系支持】
+联系电话：+8613699125353
+
+技术支持QQ: 781998178
+
+反馈问题交流群: 389764374
+
+邮箱: shengxinsoft@163.com
 
 
 ## [常见问题列表?](https://xiaomiyang.github.io/shengxinhelp.html)
