@@ -71,12 +71,20 @@
     <link href="https://xiaomiyang.github.io/2017/03/07/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     <id>https://xiaomiyang.github.io/2017/03/07/常见问题/</id>
     <published>2017-03-07T09:13:16.000Z</published>
-    <updated>2017-09-19T01:45:21.000Z</updated>
+    <updated>2017-12-01T02:22:20.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="1-7-1为最新版本。"><a href="#1-7-1为最新版本。" class="headerlink" title="1.7.1为最新版本。"></a>1.7.1为最新版本。</h1><p>本次更新</p>
+    <content type="html"><![CDATA[<h1 id="1-7-4为最新版本。"><a href="#1-7-4为最新版本。" class="headerlink" title="1.7.4为最新版本。"></a>1.7.4为最新版本。</h1><p>本次更新</p>
 <ul>
-<li>问题修复.</li>
-<li>增加主题切换功能,和黑夜模式.</li>
+<li>增加英语短语和慢速短文.</li>
+<li>支持跟读录音的微信好友分享.</li>
+<li>支持倒序播放,支持生词本单词拼读,支持生词本在取词框直接添加.</li>
+<li>支持播放前台工作摇动暂停和播放.</li>
+<li>非常感觉热心用户提出的建议和问题.</li>
+</ul>
+<p>近期更新</p>
+<ul>
+<li>继续增加学习内容.</li>
+<li>修改存在的问题.</li>
 </ul>
 <h2 id="1-下载完app连接不上网络"><a href="#1-下载完app连接不上网络" class="headerlink" title="1.下载完app连接不上网络"></a>1.下载完app连接不上网络</h2><p><strong>苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网</strong></p>
 <h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1:"></a>方法1:</h3><p>进入“设置-&gt;蜂窝移动网络-&gt;使用无线局域网与蜂窝移动的应用”（或者“设置-&gt;无线局域网-&gt;使用无线局域网与蜂窝移动的应用”），找到无法联网的App，允许其“使用数据”即可。</p>
@@ -87,19 +95,20 @@
 <li><p>返回桌面，再次打开刚才无法联网的App，这时候系统会提示“是否允许App使用数据网络”，点击“允许”，App即可顺利联网使用。</p>
 </li>
 </ul>
+<a id="more"></a>
 <h3 id="方法3"><a href="#方法3" class="headerlink" title="方法3:"></a>方法3:</h3><p>重启手机,进入app,会进行提示!</p>
 <h2 id="2-关于pc版本的问题解决方案"><a href="#2-关于pc版本的问题解决方案" class="headerlink" title="2.关于pc版本的问题解决方案"></a>2.关于pc版本的问题解决方案</h2><p>目前该软件是没有电脑版客户端的，只有通过安装安卓模拟器来实现在电脑上使用该款软件，下面小编就为大家带来电脑上如何使用的方法，第一次用安卓模拟器的朋友认真看看！</p>
 <ul>
 <li><p>1.首先在本页面下载 <code>省心英语</code> 的安卓APK文件,<a href="https://fir.im/ncenglish" target="_blank" rel="external">省心英语下载链接</a></p>
 </li>
-<li><p>2.然后在电脑上安装安卓模拟器，天天模拟器下载地址：<code>http://www.cr173.com/soft/77046.html</code>，照着安装提示一步一步完成安装，安装完成之后就会进入模拟器主界面。<a href="http://www.cr173.com/soft/77046.html" target="_blank" rel="external">模拟器下载链接</a></p>
+<li><p>2.然后在电脑上安装安卓模拟器，海马模拟器(推荐)下载地址：<code>http://droid4x.haimawan.com/</code>，照着安装提示一步一步完成安装，安装完成之后就会进入模拟器主界面。<a href="http://droid4x.haimawan.com/" target="_blank" rel="external">模拟器下载链接</a></p>
 </li>
 <li><p>3、将下载好的安卓APK文件直接拖入天天模拟器主界面，天天模拟器会自动帮你安装。</p>
 </li>
 <li><p>4、安装完成后你就可以在模拟器中找到已经安装好了的省心新概念英语电脑版客户端，点击图标就可以使用了！</p>
 </li>
 </ul>
-<a id="more"></a>
+<!-- more -->
 <h2 id="3-不能够点击取词"><a href="#3-不能够点击取词" class="headerlink" title="3.不能够点击取词"></a>3.不能够点击取词</h2><p>已经修改为双击取词,长按出现复制,也可以在我的-&gt;学习设置里面进行设置-&gt;长按取词</p>
 <h2 id="4-新概念播放没有声音"><a href="#4-新概念播放没有声音" class="headerlink" title="4.新概念播放没有声音"></a>4.新概念播放没有声音</h2><p>可以尝试重启一下手机,手机长时间没有重启导致一些系统错误~如果是没有网络看错误一</p>
 <h2 id="5-每日推送的短句谚语在哪"><a href="#5-每日推送的短句谚语在哪" class="headerlink" title="5.每日推送的短句谚语在哪"></a>5.每日推送的短句谚语在哪</h2><p>在基础课-&gt;英语谚语里面,后续版本会优化这个问题</p>
@@ -116,10 +125,18 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;1-7-1为最新版本。&quot;&gt;&lt;a href=&quot;#1-7-1为最新版本。&quot; class=&quot;headerlink&quot; title=&quot;1.7.1为最新版本。&quot;&gt;&lt;/a&gt;1.7.1为最新版本。&lt;/h1&gt;&lt;p&gt;本次更新&lt;/p&gt;
+      &lt;h1 id=&quot;1-7-4为最新版本。&quot;&gt;&lt;a href=&quot;#1-7-4为最新版本。&quot; class=&quot;headerlink&quot; title=&quot;1.7.4为最新版本。&quot;&gt;&lt;/a&gt;1.7.4为最新版本。&lt;/h1&gt;&lt;p&gt;本次更新&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;问题修复.&lt;/li&gt;
-&lt;li&gt;增加主题切换功能,和黑夜模式.&lt;/li&gt;
+&lt;li&gt;增加英语短语和慢速短文.&lt;/li&gt;
+&lt;li&gt;支持跟读录音的微信好友分享.&lt;/li&gt;
+&lt;li&gt;支持倒序播放,支持生词本单词拼读,支持生词本在取词框直接添加.&lt;/li&gt;
+&lt;li&gt;支持播放前台工作摇动暂停和播放.&lt;/li&gt;
+&lt;li&gt;非常感觉热心用户提出的建议和问题.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;近期更新&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;继续增加学习内容.&lt;/li&gt;
+&lt;li&gt;修改存在的问题.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;1-下载完app连接不上网络&quot;&gt;&lt;a href=&quot;#1-下载完app连接不上网络&quot; class=&quot;headerlink&quot; title=&quot;1.下载完app连接不上网络&quot;&gt;&lt;/a&gt;1.下载完app连接不上网络&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&quot;方法1&quot;&gt;&lt;a href=&quot;#方法1&quot; class=&quot;headerlink&quot; title=&quot;方法1:&quot;&gt;&lt;/a&gt;方法1:&lt;/h3&gt;&lt;p&gt;进入“设置-&amp;gt;蜂窝移动网络-&amp;gt;使用无线局域网与蜂窝移动的应用”（或者“设置-&amp;gt;无线局域网-&amp;gt;使用无线局域网与蜂窝移动的应用”），找到无法联网的App，允许其“使用数据”即可。&lt;/p&gt;
@@ -130,55 +147,6 @@
 &lt;li&gt;&lt;p&gt;返回桌面，再次打开刚才无法联网的App，这时候系统会提示“是否允许App使用数据网络”，点击“允许”，App即可顺利联网使用。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;方法3&quot;&gt;&lt;a href=&quot;#方法3&quot; class=&quot;headerlink&quot; title=&quot;方法3:&quot;&gt;&lt;/a&gt;方法3:&lt;/h3&gt;&lt;p&gt;重启手机,进入app,会进行提示!&lt;/p&gt;
-&lt;h2 id=&quot;2-关于pc版本的问题解决方案&quot;&gt;&lt;a href=&quot;#2-关于pc版本的问题解决方案&quot; class=&quot;headerlink&quot; title=&quot;2.关于pc版本的问题解决方案&quot;&gt;&lt;/a&gt;2.关于pc版本的问题解决方案&lt;/h2&gt;&lt;p&gt;目前该软件是没有电脑版客户端的，只有通过安装安卓模拟器来实现在电脑上使用该款软件，下面小编就为大家带来电脑上如何使用的方法，第一次用安卓模拟器的朋友认真看看！&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;1.首先在本页面下载 &lt;code&gt;省心英语&lt;/code&gt; 的安卓APK文件,&lt;a href=&quot;https://fir.im/ncenglish&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;省心英语下载链接&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;2.然后在电脑上安装安卓模拟器，天天模拟器下载地址：&lt;code&gt;http://www.cr173.com/soft/77046.html&lt;/code&gt;，照着安装提示一步一步完成安装，安装完成之后就会进入模拟器主界面。&lt;a href=&quot;http://www.cr173.com/soft/77046.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;模拟器下载链接&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;3、将下载好的安卓APK文件直接拖入天天模拟器主界面，天天模拟器会自动帮你安装。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;4、安装完成后你就可以在模拟器中找到已经安装好了的省心新概念英语电脑版客户端，点击图标就可以使用了！&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="iphone" scheme="https://xiaomiyang.github.io/categories/iphone/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>省心英语简介</title>
-    <link href="https://xiaomiyang.github.io/2016/06/08/shengxin/"/>
-    <id>https://xiaomiyang.github.io/2016/06/08/shengxin/</id>
-    <published>2016-06-08T11:21:41.000Z</published>
-    <updated>2017-04-18T02:50:28.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。</p>
-<p>听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;<br>说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;<br>读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;<br>写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;</p>
-<p>不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!<br><a id="more"></a></p>
-<h2 id="【产品特色】"><a href="#【产品特色】" class="headerlink" title="【产品特色】"></a>【产品特色】</h2><p>*《新概念英语全四册》包含新概念英语1-4全册有声英语教程：课文双语对照、音频文本、同步播放、权威详解、课后练习配套辅导;</p>
-<p>*背单词完美配合著名词汇书籍,单词字典解释，包含生动例句，媲美牛津字典,轻松掌握四六级、托福雅思词汇;</p>
-<p>*此外中英翻译、查单词、在线聊天翻译、每日一句、学习交流圈子等内容,学英语从未如此有趣;</p>
-<p>*持续优化用户体验,永久免费,还有小编及时解答问题;</p>
-<p>还等什么，赶快来趣味学英语把!</p>
-<h2 id="【用户评价】"><a href="#【用户评价】" class="headerlink" title="【用户评价】"></a>【用户评价】</h2><p>用户1：下载过很多英语学习软件，于我而言这是最好用的一款，很良心，内容丰富，而且免费，里面有新概念四册，还有大量的文章和练习习题，还有口语听力练习，轻松背单词，最基础的音标语法写作，还有一些流行的英语歌曲，最后谢谢创作者的免费分享。</p>
-<p>用户2：我在学新概念二，老师刚推荐的，超级好，给一百个赞！</p>
-<p>用户3：自己一直在用，还推荐给身边很多朋友，非常棒，一起努力！</p>
-<p>用户4：非常人性化设计的一款学习软件，美音英音随你挑，关键还能调速，必须赞！</p>
-<h2 id="【联系我们】"><a href="#【联系我们】" class="headerlink" title="【联系我们】"></a>【联系我们】</h2><p>QQ: 781998178<br>苹果用户交流反馈群: 389764374</p>
-<p><a href="https://xiaomiyang.github.io/shengxinhelp.html">常见问题?</a></p>
-<p><a href="https://xiaomiyang.github.io/SXStatement.txt">版权声明</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;下载地址&quot;&gt;&lt;a href=&quot;#下载地址&quot; class=&quot;headerlink&quot; title=&quot;下载地址&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载地址&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;【产品简介】&quot;&gt;&lt;a href=&quot;#【产品简介】&quot; class=&quot;headerlink&quot; title=&quot;【产品简介】&quot;&gt;&lt;/a&gt;【产品简介】&lt;/h2&gt;&lt;p&gt;省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。&lt;/p&gt;
-&lt;p&gt;听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;&lt;br&gt;说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;&lt;br&gt;读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;&lt;br&gt;写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;&lt;/p&gt;
-&lt;p&gt;不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!&lt;br&gt;
     
     </summary>
     
@@ -192,7 +160,7 @@
     <link href="https://xiaomiyang.github.io/2016/06/08/cleanCalendar/"/>
     <id>https://xiaomiyang.github.io/2016/06/08/cleanCalendar/</id>
     <published>2016-06-08T11:21:41.000Z</published>
-    <updated>2017-08-16T07:52:24.000Z</updated>
+    <updated>2017-12-01T02:22:24.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="最新app下载地址"><a href="#最新app下载地址" class="headerlink" title="最新app下载地址"></a><a href="http://itunes.apple.com/cn/app/id1180959821?mt=8" target="_blank" rel="external">最新app下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>昨天作者的手机收到了日历邀请，打开一看却发现是广告，垃圾信息。小伙伴遇到这种情况，怎么办啦？<br>于是上网查找,发现很多小伙伴有相同的遭遇,然后作者就各种寻找解决办法,这就是”日历清理”这个工具的诞生原因.</p>
 <h2 id="【产品特点】"><a href="#【产品特点】" class="headerlink" title="【产品特点】"></a>【产品特点】</h2><ul>
@@ -237,7 +205,7 @@
     <link href="https://xiaomiyang.github.io/2016/06/08/shengxinOnly/"/>
     <id>https://xiaomiyang.github.io/2016/06/08/shengxinOnly/</id>
     <published>2016-06-08T11:21:41.000Z</published>
-    <updated>2017-08-16T07:52:36.000Z</updated>
+    <updated>2017-12-01T02:22:16.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="最新app下载地址"><a href="#最新app下载地址" class="headerlink" title="最新app下载地址"></a><a href="http://itunes.apple.com/cn/app/id1107498029?mt=8" target="_blank" rel="external">最新app下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><ul>
 <li><p>作为英语学习敲门砖的第一册，到体味英语精髓的第四册，轻轻松松从英语零基础直达大学六级水平！<br>如果你什么都不会，你可从 第一册 学起。</p>
@@ -267,6 +235,43 @@
 &lt;li&gt;&lt;p&gt;第四册会让你开阔你的视野，用英语从人文，地理，历史，哲学等方面&lt;br&gt;讲解西方文化，熟悉英语的根源，第四册不止是学习英语，更多是运用和精通英语。同时练就你流利的英语口语，和你的阅读能力。 如果你认真学习完四册。 你将达到一个英语六级以上的水平， 理论上，交流和阅读。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="iphone" scheme="https://xiaomiyang.github.io/categories/iphone/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>省心英语简介</title>
+    <link href="https://xiaomiyang.github.io/2016/06/08/shengxin/"/>
+    <id>https://xiaomiyang.github.io/2016/06/08/shengxin/</id>
+    <published>2016-06-08T11:21:41.000Z</published>
+    <updated>2017-04-18T02:50:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。</p>
+<p>听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;<br>说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;<br>读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;<br>写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;</p>
+<p>不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!<br><a id="more"></a></p>
+<h2 id="【产品特色】"><a href="#【产品特色】" class="headerlink" title="【产品特色】"></a>【产品特色】</h2><p>*《新概念英语全四册》包含新概念英语1-4全册有声英语教程：课文双语对照、音频文本、同步播放、权威详解、课后练习配套辅导;</p>
+<p>*背单词完美配合著名词汇书籍,单词字典解释，包含生动例句，媲美牛津字典,轻松掌握四六级、托福雅思词汇;</p>
+<p>*此外中英翻译、查单词、在线聊天翻译、每日一句、学习交流圈子等内容,学英语从未如此有趣;</p>
+<p>*持续优化用户体验,永久免费,还有小编及时解答问题;</p>
+<p>还等什么，赶快来趣味学英语把!</p>
+<h2 id="【用户评价】"><a href="#【用户评价】" class="headerlink" title="【用户评价】"></a>【用户评价】</h2><p>用户1：下载过很多英语学习软件，于我而言这是最好用的一款，很良心，内容丰富，而且免费，里面有新概念四册，还有大量的文章和练习习题，还有口语听力练习，轻松背单词，最基础的音标语法写作，还有一些流行的英语歌曲，最后谢谢创作者的免费分享。</p>
+<p>用户2：我在学新概念二，老师刚推荐的，超级好，给一百个赞！</p>
+<p>用户3：自己一直在用，还推荐给身边很多朋友，非常棒，一起努力！</p>
+<p>用户4：非常人性化设计的一款学习软件，美音英音随你挑，关键还能调速，必须赞！</p>
+<h2 id="【联系我们】"><a href="#【联系我们】" class="headerlink" title="【联系我们】"></a>【联系我们】</h2><p>QQ: 781998178<br>苹果用户交流反馈群: 389764374</p>
+<p><a href="https://xiaomiyang.github.io/shengxinhelp.html">常见问题?</a></p>
+<p><a href="https://xiaomiyang.github.io/SXStatement.txt">版权声明</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;下载地址&quot;&gt;&lt;a href=&quot;#下载地址&quot; class=&quot;headerlink&quot; title=&quot;下载地址&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载地址&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;【产品简介】&quot;&gt;&lt;a href=&quot;#【产品简介】&quot; class=&quot;headerlink&quot; title=&quot;【产品简介】&quot;&gt;&lt;/a&gt;【产品简介】&lt;/h2&gt;&lt;p&gt;省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。&lt;/p&gt;
+&lt;p&gt;听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;&lt;br&gt;说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;&lt;br&gt;读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;&lt;br&gt;写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;&lt;/p&gt;
+&lt;p&gt;不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!&lt;br&gt;
     
     </summary>
     
