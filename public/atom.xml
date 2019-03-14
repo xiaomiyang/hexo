@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaomiyang.github.io/"/>
-  <updated>2018-02-01T16:07:44.000Z</updated>
+  <updated>2019-03-14T16:28:45.826Z</updated>
   <id>https://xiaomiyang.github.io/</id>
   
   <author>
@@ -20,20 +20,19 @@
     <link href="https://xiaomiyang.github.io/2017/03/07/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     <id>https://xiaomiyang.github.io/2017/03/07/常见问题/</id>
     <published>2017-03-07T09:13:16.000Z</published>
-    <updated>2018-02-01T16:07:44.000Z</updated>
+    <updated>2019-03-14T16:28:45.826Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="1-7-5为最新版本。"><a href="#1-7-5为最新版本。" class="headerlink" title="1.7.5为最新版本。"></a>1.7.5为最新版本。</h1><p>本次更新</p>
+    <content type="html"><![CDATA[<h1 id="1-8-2为最新版本。"><a href="#1-8-2为最新版本。" class="headerlink" title="1.8.2为最新版本。"></a>1.8.2为最新版本。</h1><p>本次更新</p>
 <ul>
-<li>新概念的词汇模块新增一键导入生词.</li>
-<li>修改闪退问题.</li>
-<li>修改美音状态下分句不准的问题.</li>
+<li>新概念的一些错误.</li>
+<li>修改背单词的错误的问题.</li>
 </ul>
 <p>近期更新</p>
 <ul>
 <li>继续增加学习内容.</li>
 <li>修改存在的问题.</li>
 </ul>
-<h2 id="1-下载完app连接不上网络"><a href="#1-下载完app连接不上网络" class="headerlink" title="1.下载完app连接不上网络"></a>1.下载完app连接不上网络</h2><p><strong>苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网</strong></p>
+<h2 id="一-下载完app连接不上网络，显示网络错误？"><a href="#一-下载完app连接不上网络，显示网络错误？" class="headerlink" title="一.下载完app连接不上网络，显示网络错误？"></a>一.下载完app连接不上网络，显示网络错误？</h2><p><strong>苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网</strong></p>
 <h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1:"></a>方法1:</h3><p>进入“设置-&gt;蜂窝移动网络-&gt;使用无线局域网与蜂窝移动的应用”（或者“设置-&gt;无线局域网-&gt;使用无线局域网与蜂窝移动的应用”），找到无法联网的App，允许其“使用数据”即可。</p>
 <h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2:"></a>方法2:</h3><p>另外还有一种Bug情况：在该列表中找不到这款无法联网的App。</p>
 <ul>
@@ -43,8 +42,9 @@
 </li>
 </ul>
 <a id="more"></a>
+<p><img src="https://img3.doubanio.com/view/note/l/public/p58901814.webp" alt="首页"></p>
 <h3 id="方法3"><a href="#方法3" class="headerlink" title="方法3:"></a>方法3:</h3><p>重启手机,进入app,会进行提示!</p>
-<h2 id="2-关于pc版本的问题解决方案"><a href="#2-关于pc版本的问题解决方案" class="headerlink" title="2.关于pc版本的问题解决方案"></a>2.关于pc版本的问题解决方案</h2><p>目前该软件是没有电脑版客户端的，只有通过安装安卓模拟器来实现在电脑上使用该款软件，下面小编就为大家带来电脑上如何使用的方法，第一次用安卓模拟器的朋友认真看看！</p>
+<h2 id="二-有没有电脑版本？关于pc版本的问题解决方案？"><a href="#二-有没有电脑版本？关于pc版本的问题解决方案？" class="headerlink" title="二.有没有电脑版本？关于pc版本的问题解决方案？"></a>二.有没有电脑版本？关于pc版本的问题解决方案？</h2><p>目前该软件是没有电脑版客户端的，只有通过安装安卓模拟器来实现在电脑上使用该款软件，下面小编就为大家带来电脑上如何使用的方法，第一次用安卓模拟器的朋友认真看看！</p>
 <ul>
 <li><p>1.首先在本页面下载 <code>省心英语</code> 的安卓APK文件,<a href="https://fir.im/ncenglish" target="_blank" rel="external">省心英语下载链接</a></p>
 </li>
@@ -55,15 +55,17 @@
 <li><p>4、安装完成后你就可以在模拟器中找到已经安装好了的省心新概念英语电脑版客户端，点击图标就可以使用了！</p>
 </li>
 </ul>
-<h2 id="3-不能够点击取词"><a href="#3-不能够点击取词" class="headerlink" title="3.不能够点击取词"></a>3.不能够点击取词</h2><p>已经修改为双击取词,长按出现复制,也可以在我的-&gt;学习设置里面进行设置-&gt;长按取词</p>
-<h2 id="4-新概念播放没有声音"><a href="#4-新概念播放没有声音" class="headerlink" title="4.新概念播放没有声音"></a>4.新概念播放没有声音</h2><p>可以尝试重启一下手机,手机长时间没有重启导致一些系统错误~如果是没有网络看错误一</p>
-<h2 id="5-每日推送的短句谚语在哪"><a href="#5-每日推送的短句谚语在哪" class="headerlink" title="5.每日推送的短句谚语在哪"></a>5.每日推送的短句谚语在哪</h2><p>在基础课-&gt;英语谚语里面,后续版本会优化这个问题</p>
-<h2 id="6-单曲播放不好用了-1-6-6"><a href="#6-单曲播放不好用了-1-6-6" class="headerlink" title="6.单曲播放不好用了(1.6.6)"></a>6.单曲播放不好用了(1.6.6)</h2><p>设置一下单篇播放次数,可以解决问题.</p>
+<h2 id="三-不能够点击取词？"><a href="#三-不能够点击取词？" class="headerlink" title="三.不能够点击取词？"></a>三.不能够点击取词？</h2><p>已经修改为双击取词,长按出现复制,也可以在我的-&gt;学习设置里面进行设置-&gt;长按取词</p>
+<h2 id="四-新概念播放没有声音？"><a href="#四-新概念播放没有声音？" class="headerlink" title="四.新概念播放没有声音？"></a>四.新概念播放没有声音？</h2><p>可以尝试重启一下手机,手机长时间没有重启导致一些系统错误~如果是没有网络看错误一</p>
+<h2 id="五-苹果系统和安卓系统不一致？"><a href="#五-苹果系统和安卓系统不一致？" class="headerlink" title="五.苹果系统和安卓系统不一致？"></a>五.苹果系统和安卓系统不一致？</h2><ul>
+<li>1.两张操作系统不同，根据不同平台特性开发！</li>
+<li>2.功能上苹果会向安卓对其，找到相关对应的学习功能！</li>
+</ul>
 <hr>
 <ul>
 <li><p>有建议或者问题请反馈给我们,多谢大家,我们会不断改进app,有用的话可以推荐给需要的同学!</p>
 </li>
-<li><p>安卓和ios统一下载地址:<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">省心英语-最好用的学英语软件!</a></p>
+<li><p>安卓和ios统一下载地址:<a href="http://fir.im/ncenglish" target="_blank" rel="external">省心英语-最好用的学英语软件!</a></p>
 </li>
 </ul>
 <hr>
@@ -71,18 +73,17 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;1-7-5为最新版本。&quot;&gt;&lt;a href=&quot;#1-7-5为最新版本。&quot; class=&quot;headerlink&quot; title=&quot;1.7.5为最新版本。&quot;&gt;&lt;/a&gt;1.7.5为最新版本。&lt;/h1&gt;&lt;p&gt;本次更新&lt;/p&gt;
+      &lt;h1 id=&quot;1-8-2为最新版本。&quot;&gt;&lt;a href=&quot;#1-8-2为最新版本。&quot; class=&quot;headerlink&quot; title=&quot;1.8.2为最新版本。&quot;&gt;&lt;/a&gt;1.8.2为最新版本。&lt;/h1&gt;&lt;p&gt;本次更新&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;新概念的词汇模块新增一键导入生词.&lt;/li&gt;
-&lt;li&gt;修改闪退问题.&lt;/li&gt;
-&lt;li&gt;修改美音状态下分句不准的问题.&lt;/li&gt;
+&lt;li&gt;新概念的一些错误.&lt;/li&gt;
+&lt;li&gt;修改背单词的错误的问题.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;近期更新&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;继续增加学习内容.&lt;/li&gt;
 &lt;li&gt;修改存在的问题.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;1-下载完app连接不上网络&quot;&gt;&lt;a href=&quot;#1-下载完app连接不上网络&quot; class=&quot;headerlink&quot; title=&quot;1.下载完app连接不上网络&quot;&gt;&lt;/a&gt;1.下载完app连接不上网络&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一-下载完app连接不上网络，显示网络错误？&quot;&gt;&lt;a href=&quot;#一-下载完app连接不上网络，显示网络错误？&quot; class=&quot;headerlink&quot; title=&quot;一.下载完app连接不上网络，显示网络错误？&quot;&gt;&lt;/a&gt;一.下载完app连接不上网络，显示网络错误？&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&quot;方法1&quot;&gt;&lt;a href=&quot;#方法1&quot; class=&quot;headerlink&quot; title=&quot;方法1:&quot;&gt;&lt;/a&gt;方法1:&lt;/h3&gt;&lt;p&gt;进入“设置-&amp;gt;蜂窝移动网络-&amp;gt;使用无线局域网与蜂窝移动的应用”（或者“设置-&amp;gt;无线局域网-&amp;gt;使用无线局域网与蜂窝移动的应用”），找到无法联网的App，允许其“使用数据”即可。&lt;/p&gt;
 &lt;h3 id=&quot;方法2&quot;&gt;&lt;a href=&quot;#方法2&quot; class=&quot;headerlink&quot; title=&quot;方法2:&quot;&gt;&lt;/a&gt;方法2:&lt;/h3&gt;&lt;p&gt;另外还有一种Bug情况：在该列表中找不到这款无法联网的App。&lt;/p&gt;
 &lt;ul&gt;
@@ -104,7 +105,7 @@
     <link href="https://xiaomiyang.github.io/2017/01/12/%E8%B6%A3%E5%B0%8F%E5%8E%A8%E5%BA%94%E7%94%A8%E7%AE%80%E4%BB%8B/"/>
     <id>https://xiaomiyang.github.io/2017/01/12/趣小厨应用简介/</id>
     <published>2017-01-11T17:41:24.000Z</published>
-    <updated>2018-02-01T16:07:44.000Z</updated>
+    <updated>2019-03-14T16:27:20.285Z</updated>
     
     <content type="html"><![CDATA[<h2 id="最新app下载地址"><a href="#最新app下载地址" class="headerlink" title="最新app下载地址"></a><a href="https://itunes.apple.com/cn/app/id1269425611?mt=8" target="_blank" rel="external">最新app下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>趣小厨-菜谱大全，小白做饭做菜必备!汇集了来自全国各地的数十万道家常菜,分类清晰,图文并茂，页面简洁大方，超级好用！</p>
 <ul>
@@ -120,10 +121,12 @@
 <a id="more"></a>
 </li>
 </ul>
-<p><img src="http://imgcdn.wapx.cn/appfile01/ios/a/2e3a9eeee2c1c57d0f736b611179818b/image1.png?" alt="首页"></p>
-<p><img src="http://imgcdn.wapx.cn/appfile01/ios/a/2e3a9eeee2c1c57d0f736b611179818b/image2.png?" alt="首页"></p>
-<p><img src="http://imgcdn.wapx.cn/appfile01/ios/a/2e3a9eeee2c1c57d0f736b611179818b/image3.png?" alt="首页"></p>
-<p><img src="http://imgcdn.wapx.cn/appfile01/ios/a/2e3a9eeee2c1c57d0f736b611179818b/image4.png?" alt="首页"></p>
+<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778885.webp" alt="首页"></p>
+<p><img src="https://img1.doubanio.com/view/photo/m/public/p2550778867.webp" alt="首页"></p>
+<p><img src="https://img1.doubanio.com/view/photo/m/public/p2550778867.webp?" alt="首页"></p>
+<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778881.webp?" alt="首页"></p>
+<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778871.webp?" alt="首页"></p>
+<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778890.webp?" alt="首页"></p>
 <h2 id="【联系支持】"><a href="#【联系支持】" class="headerlink" title="【联系支持】"></a>【联系支持】</h2><p>技术支持QQ: 410900345</p>
 <p>反馈问题交流群: 496137591</p>
 <p>邮箱: 410900345@163.com</p>
@@ -142,43 +145,6 @@
 &lt;li&gt;&lt;p&gt;贴心的浏览记录，看过的菜谱都在这里，很贴心,每天都有精品好菜推荐，天天都能吃出新花样!&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;吃货们，快行动起来吧！路过看过不要错过！试过用过绝对不错！&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="iphone" scheme="https://xiaomiyang.github.io/categories/iphone/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>省心英语简介</title>
-    <link href="https://xiaomiyang.github.io/2016/06/08/shengxin/"/>
-    <id>https://xiaomiyang.github.io/2016/06/08/shengxin/</id>
-    <published>2016-06-08T11:21:41.000Z</published>
-    <updated>2017-04-19T15:00:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。</p>
-<p>听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;<br>说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;<br>读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;<br>写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;</p>
-<p>不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!<br><a id="more"></a></p>
-<h2 id="【产品特色】"><a href="#【产品特色】" class="headerlink" title="【产品特色】"></a>【产品特色】</h2><p>*《新概念英语全四册》包含新概念英语1-4全册有声英语教程：课文双语对照、音频文本、同步播放、权威详解、课后练习配套辅导;</p>
-<p>*背单词完美配合著名词汇书籍,单词字典解释，包含生动例句，媲美牛津字典,轻松掌握四六级、托福雅思词汇;</p>
-<p>*此外中英翻译、查单词、在线聊天翻译、每日一句、学习交流圈子等内容,学英语从未如此有趣;</p>
-<p>*持续优化用户体验,永久免费,还有小编及时解答问题;</p>
-<p>还等什么，赶快来趣味学英语把!</p>
-<h2 id="【用户评价】"><a href="#【用户评价】" class="headerlink" title="【用户评价】"></a>【用户评价】</h2><p>用户1：下载过很多英语学习软件，于我而言这是最好用的一款，很良心，内容丰富，而且免费，里面有新概念四册，还有大量的文章和练习习题，还有口语听力练习，轻松背单词，最基础的音标语法写作，还有一些流行的英语歌曲，最后谢谢创作者的免费分享。</p>
-<p>用户2：我在学新概念二，老师刚推荐的，超级好，给一百个赞！</p>
-<p>用户3：自己一直在用，还推荐给身边很多朋友，非常棒，一起努力！</p>
-<p>用户4：非常人性化设计的一款学习软件，美音英音随你挑，关键还能调速，必须赞！</p>
-<h2 id="【联系我们】"><a href="#【联系我们】" class="headerlink" title="【联系我们】"></a>【联系我们】</h2><p>QQ: 781998178<br>苹果用户交流反馈群: 389764374</p>
-<p><a href="https://xiaomiyang.github.io/shengxinhelp.html">常见问题?</a></p>
-<p><a href="https://xiaomiyang.github.io/SXStatement.txt">版权声明</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;下载地址&quot;&gt;&lt;a href=&quot;#下载地址&quot; class=&quot;headerlink&quot; title=&quot;下载地址&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载地址&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;【产品简介】&quot;&gt;&lt;a href=&quot;#【产品简介】&quot; class=&quot;headerlink&quot; title=&quot;【产品简介】&quot;&gt;&lt;/a&gt;【产品简介】&lt;/h2&gt;&lt;p&gt;省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。&lt;/p&gt;
-&lt;p&gt;听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;&lt;br&gt;说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;&lt;br&gt;读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;&lt;br&gt;写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;&lt;/p&gt;
-&lt;p&gt;不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!&lt;br&gt;
     
     </summary>
     
@@ -224,6 +190,43 @@
 &lt;li&gt;&lt;p&gt;支持一键日历清理,只要用户保持和 iCloud 的联系，修改会自动同步到 iCloud 上.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="iphone" scheme="https://xiaomiyang.github.io/categories/iphone/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>省心英语简介</title>
+    <link href="https://xiaomiyang.github.io/2016/06/08/shengxin/"/>
+    <id>https://xiaomiyang.github.io/2016/06/08/shengxin/</id>
+    <published>2016-06-08T11:21:41.000Z</published>
+    <updated>2017-04-19T15:00:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。</p>
+<p>听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;<br>说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;<br>读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;<br>写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;</p>
+<p>不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!<br><a id="more"></a></p>
+<h2 id="【产品特色】"><a href="#【产品特色】" class="headerlink" title="【产品特色】"></a>【产品特色】</h2><p>*《新概念英语全四册》包含新概念英语1-4全册有声英语教程：课文双语对照、音频文本、同步播放、权威详解、课后练习配套辅导;</p>
+<p>*背单词完美配合著名词汇书籍,单词字典解释，包含生动例句，媲美牛津字典,轻松掌握四六级、托福雅思词汇;</p>
+<p>*此外中英翻译、查单词、在线聊天翻译、每日一句、学习交流圈子等内容,学英语从未如此有趣;</p>
+<p>*持续优化用户体验,永久免费,还有小编及时解答问题;</p>
+<p>还等什么，赶快来趣味学英语把!</p>
+<h2 id="【用户评价】"><a href="#【用户评价】" class="headerlink" title="【用户评价】"></a>【用户评价】</h2><p>用户1：下载过很多英语学习软件，于我而言这是最好用的一款，很良心，内容丰富，而且免费，里面有新概念四册，还有大量的文章和练习习题，还有口语听力练习，轻松背单词，最基础的音标语法写作，还有一些流行的英语歌曲，最后谢谢创作者的免费分享。</p>
+<p>用户2：我在学新概念二，老师刚推荐的，超级好，给一百个赞！</p>
+<p>用户3：自己一直在用，还推荐给身边很多朋友，非常棒，一起努力！</p>
+<p>用户4：非常人性化设计的一款学习软件，美音英音随你挑，关键还能调速，必须赞！</p>
+<h2 id="【联系我们】"><a href="#【联系我们】" class="headerlink" title="【联系我们】"></a>【联系我们】</h2><p>QQ: 781998178<br>苹果用户交流反馈群: 389764374</p>
+<p><a href="https://xiaomiyang.github.io/shengxinhelp.html">常见问题?</a></p>
+<p><a href="https://xiaomiyang.github.io/SXStatement.txt">版权声明</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;下载地址&quot;&gt;&lt;a href=&quot;#下载地址&quot; class=&quot;headerlink&quot; title=&quot;下载地址&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载地址&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;【产品简介】&quot;&gt;&lt;a href=&quot;#【产品简介】&quot; class=&quot;headerlink&quot; title=&quot;【产品简介】&quot;&gt;&lt;/a&gt;【产品简介】&lt;/h2&gt;&lt;p&gt;省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。&lt;/p&gt;
+&lt;p&gt;听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;&lt;br&gt;说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;&lt;br&gt;读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;&lt;br&gt;写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;&lt;/p&gt;
+&lt;p&gt;不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!&lt;br&gt;
     
     </summary>
     
