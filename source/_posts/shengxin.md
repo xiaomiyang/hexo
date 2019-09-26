@@ -4,7 +4,11 @@ categories: 'iphone'
 date: 2016-06-08 19:21:41
 tags:
 ---
+
+<img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgicon-83.5%402x.png" width = "100" height = "100" div align=center/>
+
 ##  [下载地址](http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish)
+
 ## 【产品简介】
 省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。
 
@@ -14,6 +18,7 @@ tags:
 写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;
 
 不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!
+
 <!-- more -->
 ## 【产品特色】
 *《新概念英语全四册》包含新概念英语1-4全册有声英语教程：课文双语对照、音频文本、同步播放、权威详解、课后练习配套辅导;

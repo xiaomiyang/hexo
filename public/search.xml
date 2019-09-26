@@ -6,10 +6,12 @@
     <entry>
       <title><![CDATA[<省心英语>苹果版本使用常见问题!]]></title>
       <url>https://xiaomiyang.github.io/2017/03/07/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-      <content type="html"><![CDATA[<h1 id="1-8-3为最新版本。"><a href="#1-8-3为最新版本。" class="headerlink" title="1.8.3为最新版本。"></a>1.8.3为最新版本。</h1><p>本次更新</p>
+      <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgicon-83.5%402x.png" width="100" height="100" div="" align="center/"></p>
+<h2 id="1-7-4为最新版本下载地址"><a href="#1-7-4为最新版本下载地址" class="headerlink" title="1.7.4为最新版本下载地址"></a>1.7.4为最新版本<a href="http://ncechina.com/" target="_blank" rel="external">下载地址</a></h2><p>本次更新</p>
 <ul>
-<li>新概念的一些错误.</li>
-<li>修改背单词的错误的问题.</li>
+<li>适配iOS13系统.</li>
+<li>修改崩溃的bug.</li>
+<li>希望小哥哥小姐姐们多多提出问题和建议,我们会陆续解决的.</li>
 </ul>
 <p>近期更新</p>
 <ul>
@@ -17,39 +19,35 @@
 <li>修改存在的问题.</li>
 </ul>
 <h2 id="一-下载完app连接不上网络，显示网络错误？"><a href="#一-下载完app连接不上网络，显示网络错误？" class="headerlink" title="一.下载完app连接不上网络，显示网络错误？"></a>一.下载完app连接不上网络，显示网络错误？</h2><p><strong>苹果在iOS10中，增加了“使用无线局域网与蜂窝移动应用”的功能。有些App升级后默认关闭了数据使用，导致无法联网</strong></p>
-<h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1:"></a>方法1:</h3><p>进入“设置-&gt;蜂窝移动网络-&gt;使用无线局域网与蜂窝移动的应用”（或者“设置-&gt;无线局域网-&gt;使用无线局域网与蜂窝移动的应用”），找到无法联网的App，允许其“使用数据”即可。</p>
+<h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1:"></a>方法1:</h3><p>进入<code>“设置-&gt;蜂窝移动网络-&gt;使用无线局域网与蜂窝移动的应用”（或者“设置-&gt;无线局域网-&gt;使用无线局域网与蜂窝移动的应用”）</code>，找到无法联网的App，允许其“使用数据”即可。</p>
 <h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2:"></a>方法2:</h3><p>另外还有一种Bug情况：在该列表中找不到这款无法联网的App。</p>
-<ul>
-<li><p>此时，在列表中任意选择一个App，先关闭“无线局域网与蜂窝移动数据“，即不允许其使用数据。然后再重新打开允许使用“无线局域网与蜂窝移动数据”。</p>
-</li>
-<li><p>返回桌面，再次打开刚才无法联网的App，这时候系统会提示“是否允许App使用数据网络”，点击“允许”，App即可顺利联网使用。</p>
-</li>
-</ul>
+<p>2.1 此时，在列表中任意选择一个App，先关闭“无线局域网与蜂窝移动数据“，即不允许其使用数据。然后再重新打开允许使用“无线局域网与蜂窝移动数据”。</p>
+<p>2.2 返回桌面，再次打开刚才无法联网的App，这时候系统会提示“是否允许App使用数据网络”，点击“允许”，App即可顺利联网使用。</p>
 <a id="more"></a>
-<p><img src="https://img3.doubanio.com/view/note/l/public/p58901814.webp" alt="首页"></p>
+<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgp58901814.jpg" width="50%" height="50%" div="" align="center"></p>
 <h3 id="方法3"><a href="#方法3" class="headerlink" title="方法3:"></a>方法3:</h3><p>重启手机,进入app,会进行提示!</p>
 <h2 id="二-有没有电脑版本？关于pc版本的问题解决方案？"><a href="#二-有没有电脑版本？关于pc版本的问题解决方案？" class="headerlink" title="二.有没有电脑版本？关于pc版本的问题解决方案？"></a>二.有没有电脑版本？关于pc版本的问题解决方案？</h2><p>目前该软件是没有电脑版客户端的，只有通过安装安卓模拟器来实现在电脑上使用该款软件，下面小编就为大家带来电脑上如何使用的方法，第一次用安卓模拟器的朋友认真看看！</p>
 <ul>
-<li><p>1.首先在本页面下载 <code>省心英语</code> 的安卓APK文件,<a href="https://fir.im/ncenglish" target="_blank" rel="external">省心英语下载链接</a></p>
+<li><p>2.1 首先在本页面下载 <code>省心英语</code> 的安卓APK文件,<a href="http://ncechina.com/" target="_blank" rel="external">省心英语下载链接</a></p>
 </li>
-<li><p>2.然后在电脑上安装安卓模拟器，海马模拟器(推荐)下载地址：<code>http://droid4x.haimawan.com/</code>，照着安装提示一步一步完成安装，安装完成之后就会进入模拟器主界面。<a href="http://droid4x.haimawan.com/" target="_blank" rel="external">模拟器下载链接</a></p>
+<li><p>2.2 然后在电脑上安装安卓模拟器，海马模拟器(推荐)下载地址：<code>http://droid4x.haimawan.com/</code>，照着安装提示一步一步完成安装，安装完成之后就会进入模拟器主界面。<a href="http://droid4x.haimawan.com/" target="_blank" rel="external">模拟器下载链接</a></p>
 </li>
-<li><p>3、将下载好的安卓APK文件直接拖入海马模拟器主界面，天天模拟器会自动帮你安装。</p>
+<li><p>2.3 将下载好的安卓APK文件直接拖入海马模拟器主界面，天天模拟器会自动帮你安装。</p>
 </li>
-<li><p>4、安装完成后你就可以在模拟器中找到已经安装好了的省心新概念英语电脑版客户端，点击图标就可以使用了！</p>
+<li><p>2.4 安装完成后你就可以在模拟器中找到已经安装好了的省心新概念英语电脑版客户端，点击图标就可以使用了！</p>
 </li>
 </ul>
 <h2 id="三-不能够点击取词？"><a href="#三-不能够点击取词？" class="headerlink" title="三.不能够点击取词？"></a>三.不能够点击取词？</h2><p>已经修改为双击取词,长按出现复制,也可以在我的-&gt;学习设置里面进行设置-&gt;长按取词</p>
 <h2 id="四-新概念播放没有声音？"><a href="#四-新概念播放没有声音？" class="headerlink" title="四.新概念播放没有声音？"></a>四.新概念播放没有声音？</h2><p>可以尝试重启一下手机,手机长时间没有重启导致一些系统错误~如果是没有网络看错误一</p>
 <h2 id="五-苹果系统和安卓系统不一致？"><a href="#五-苹果系统和安卓系统不一致？" class="headerlink" title="五.苹果系统和安卓系统不一致？"></a>五.苹果系统和安卓系统不一致？</h2><ul>
-<li>1.两张操作系统不同，根据不同平台特性开发！</li>
-<li>2.功能上苹果会向安卓对其，找到相关对应的学习功能！</li>
+<li>5.1.两张操作系统不同，根据不同平台特性开发！</li>
+<li>5.2.功能上苹果会向安卓对其，找到相关对应的学习功能！</li>
 </ul>
 <hr>
 <ul>
 <li><p>有建议或者问题请反馈给我们,多谢大家,我们会不断改进app,有用的话可以推荐给需要的同学!</p>
 </li>
-<li><p>安卓和ios统一下载地址:<a href="http://fir.im/ncenglish" target="_blank" rel="external">省心英语-最好用的学英语软件!</a></p>
+<li><p>安卓和ios统一下载地址:<a href="http://ncechina.com/" target="_blank" rel="external">省心英语-最好用的学英语软件!</a></p>
 </li>
 </ul>
 <hr>
@@ -73,12 +71,11 @@
 <a id="more"></a>
 </li>
 </ul>
-<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778885.webp" alt="首页"></p>
-<p><img src="https://img1.doubanio.com/view/photo/m/public/p2550778867.webp" alt="首页"></p>
-<p><img src="https://img1.doubanio.com/view/photo/m/public/p2550778867.webp" alt="首页"></p>
-<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778881.webp" alt="首页"></p>
-<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778871.webp" alt="首页"></p>
-<p><img src="https://img3.doubanio.com/view/photo/m/public/p2550778890.webp" alt="首页"></p>
+<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgp2550778877.jpg" width="50%" height="50%" div="" align="center/"></p>
+<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgp2550778867.jpg" width="50%" height="50%" div="" align="center/"></p>
+<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgp2550778887.jpg" width="50%" height="50%" div="" align="center/"></p>
+<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgp2550778888.jpg" width="50%" height="50%" div="" align="center/"></p>
+<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgp2550778871.jpg" width="50%" height="50%" div="" align="center/"></p>
 <h2 id="【联系支持】"><a href="#【联系支持】" class="headerlink" title="【联系支持】"></a>【联系支持】</h2><p>技术支持QQ: 410900345</p>
 <p>反馈问题交流群: 496137591</p>
 <p>邮箱: 410900345@163.com</p>
@@ -109,9 +106,11 @@
     <entry>
       <title><![CDATA[省心英语简介]]></title>
       <url>https://xiaomiyang.github.io/2016/06/08/shengxin/</url>
-      <content type="html"><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。</p>
+      <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/sukeyang/blogImage/master/imgicon-83.5%402x.png" width="100" height="100" div="" align="center/"></p>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.xiaobin.ncenglish" target="_blank" rel="external">下载地址</a></h2><h2 id="【产品简介】"><a href="#【产品简介】" class="headerlink" title="【产品简介】"></a>【产品简介】</h2><p>省心英语通过完整的英语学习体系，帮助学生掌握英语的4项基本技能——听、说、读、写，使学生能在学习中最大限度地发挥自己的潜能。</p>
 <p>听 - 雅思、托福、四级、六级、真题、美剧、电影、音乐、VOA等,可调节播放速度,最全的听力资料库,丢掉字幕看美剧;<br>说 - 日常会话、商务职场、旅游出行，校园生活等各类口语场景,口语实时打分,好玩又有效的,全面提升英语口语,勾搭老外朋友不是事;<br>读 - 英语新闻、精选双语美文、经典诗歌、幽默笑话、趣味故事,全部中英对照;<br>写 - 生词本,双击取词自动记录生疏的单词，出门路上，坐车、等车时候方便你随时翻阅默背;</p>
-<p>不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!<br><a id="more"></a></p>
+<p>不论你是新手上路还是资深英语爱好者，都能找到适合自己学习素材!</p>
+<a id="more"></a>
 <h2 id="【产品特色】"><a href="#【产品特色】" class="headerlink" title="【产品特色】"></a>【产品特色】</h2><p>*《新概念英语全四册》包含新概念英语1-4全册有声英语教程：课文双语对照、音频文本、同步播放、权威详解、课后练习配套辅导;</p>
 <p>*背单词完美配合著名词汇书籍,单词字典解释，包含生动例句，媲美牛津字典,轻松掌握四六级、托福雅思词汇;</p>
 <p>*此外中英翻译、查单词、在线聊天翻译、每日一句、学习交流圈子等内容,学英语从未如此有趣;</p>
